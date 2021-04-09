@@ -18,7 +18,7 @@
     flex-wrap: nowrap;
     width: 100%;
     background: rgb(114, 140, 77, 0.85);
-
+    
   }
 
   h1 {
@@ -53,6 +53,11 @@
   .footer-container {
     position: absolute;
     bottom: 10px;    
+  }
+
+  .header-container {
+    position: absolute;
+    top: 10px;
   }
   @media only screen and (min-width: 376px){
 

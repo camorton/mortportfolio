@@ -13,7 +13,7 @@ nav {
 }
 
 a {
- color: rgba(93, 56, 110, 0.7); 
+ color:  rgb(66, 53, 75); 
   
 }
 
@@ -30,11 +30,12 @@ a {
    display: flex;
    flex-direction: column;
    position: absolute;
+   text-align: right;
    min-width: 90px;
-   background-color:  rgb(154, 154, 177, 0.7);
-   font-family: 'Roboto', sans-serif;
+   background: rgba(160, 86, 160, 0.3);
+   font-family: 'Kiwi Maru', serif;
    right: 3%;
-   top: 58px;
+   top: 60px;
 }
 
 a {
@@ -60,5 +61,45 @@ i {
 }
 
 @media only screen and (min-width: 768px) {
-
+    header {
+        display: block;
+        width: 100%;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        width: 100vh;
+        margin: 10px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(66, 53, 75);
+    }
+    
+    a:visited {
+        color: rgb(66, 53, 75);;
+    }
+    
+    button {
+        background: rgba(255, 255, 255, .5);
+        border: 3px solid rgb(66, 53, 75);;
+        color: rgb(66, 53, 75);
+        padding: 10px 15px;
+        margin: 10px;
+        font-size: 22px;
+        font-family: 'Kiwi Maru', serif;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background: rgba(255, 255, 255, .2);
+    }
+    
+    nav {
+        display: none;
+    }
 }

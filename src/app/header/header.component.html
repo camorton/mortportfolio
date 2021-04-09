@@ -1,19 +1,13 @@
 <header>
     <div class="button-container">
       <button>
-        <a routerLink="/mainpage" routerLinkActive="active" alt="home"
-          >Home</a
-        >
+        <a routerLink="/mainpage" routerLinkActive="active" alt="home">Home</a>
       </button>
     <button>
-      <a routerLink="/project" routerLinkActive="active" alt="projects"
-        >Projects</a
-      >
+      <a routerLink="/projects" routerLinkActive="active" alt="projects">Projects</a>
     </button>
     <button>
-      <a routerLink="skills" routerLinkActive="active" alt="skills"
-        >Skills</a
-      >
+      <a routerLink="/skills" routerLinkActive="active" alt="skills">Skills</a>
     </button>
     <button>
       <a routerLink="/about" routerLinkActive="active" alt="about">About</a>
@@ -28,17 +22,9 @@
           <i class="fas fa-bars"></i>
         </button>
         <div id="myDropdown" class="dropdown-content" *ngIf="hamburgerNav">
-          <a routerLink="/main" routerLinkActive="active" alt="home"
-            >Home</a>
-          <a
-            routerLink="/projects"
-            routerLinkActive="active"
-            alt="projects"
-            >Projects</a
-          >
-          <a routerLink="/skills" routerLinkActive="active" alt="skills"
-            >Skills</a
-          >
+          <a routerLink="/mainpage" routerLinkActive="active" alt="home">Home</a>
+          <a routerLink="/projects" routerLinkActive="active" alt="projects">Projects</a>
+          <a routerLink="/skills" routerLinkActive="active" alt="skills">Skills</a>
           <a routerLink="/about" routerLinkActive="active" alt="about">About</a>
         </div>
       </div>
