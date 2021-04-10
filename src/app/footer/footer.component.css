@@ -5,14 +5,18 @@
     align-content: flex-end;
     color:  rgb(61, 31, 92);
     font-family: 'Kiwi Maru', serif;
-    background: rgb(114, 140, 77);
+    background: rgba(77, 67, 127, 0.8);
     border-radius: 10px;
     
 }
 .fab {
-    color:rgb(9, 65, 121);
+    color:black;
     padding: 5px;
 }
+.fab:hover {
+    color: white;
+}
+
 a {
  color:  rgb(245, 240, 248);
  text-decoration: none;

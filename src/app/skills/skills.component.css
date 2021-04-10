@@ -1,0 +1,40 @@
+.main-container {
+    background: url(https://images.unsplash.com/photo-1541261248599-cef2fcabf912?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+    position: absolute;
+    top: 10px;
+  }
+
+  .footer-container {
+    position: absolute;
+    bottom: 10px;    
+  }
+  .skills-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    background-color: rgba(205, 208, 229, 0.9);
+    height: 70%;
+   }
+
+  .skill1, .skill2, .skill3, .skill4  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    background: rgba(21, 25, 94);
+    padding: 10px, 0;
+    height: 100px;
+
+  }
