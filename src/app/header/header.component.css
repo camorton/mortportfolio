@@ -14,8 +14,11 @@ nav {
 
 a {
  color:  rgb(66, 53, 75); 
-  
+ padding: 8px;
+font-size: 20px;
 }
+  
+
 
 .nav-container {
     display: flex;
@@ -33,15 +36,12 @@ a {
    text-align: right;
    min-width: 90px;
    background: rgba(250, 249, 255, 0.8);
-   font-family: 'Kiwi Maru', serif;
+   font-family: 'Montserrat', sans-serif;
    right: 3%;
    top: 60px;
 }
 
-a {
-padding: 8px;
-font-size: 20px;
-}
+
 
 i {
    font-size: 25px;
@@ -84,13 +84,13 @@ i {
     }
     
     button {
-        background: rgba(255, 255, 255, .5);
+        background: rgba(255, 255, 255, .7);
         border: 3px solid rgb(66, 53, 75);;
         color: rgb(66, 53, 75);
         padding: 10px 15px;
         margin: 10px;
         font-size: 22px;
-        font-family: 'Kiwi Maru', serif;
+        font-family: 'Montserrat', sans-serif;
         border-radius: 10px;
         cursor: pointer;
     }
