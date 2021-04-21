@@ -71,7 +71,8 @@ i {
         justify-content: space-evenly;
         align-content: flex-start;
         width: 100vh;
-        margin: 10px;
+        margin: 0px;
+        padding: 0px;
     }
     
     a {
@@ -87,7 +88,7 @@ i {
         background: rgba(255, 255, 255, .7);
         border: 3px solid rgb(66, 53, 75);;
         color: rgb(66, 53, 75);
-        padding: 10px 15px;
+        padding: 5px 10px;
         margin: 10px;
         font-size: 22px;
         font-family: 'Montserrat', sans-serif;

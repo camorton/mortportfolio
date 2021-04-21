@@ -18,4 +18,81 @@
     bottom: 10px;    
   }
 
+  .bio {
+    background-color:   rgba(117, 125, 216, 0.75);;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif; 
+    align-items: center;
+    align-content: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+   }
+   @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+   }
+  .career {
+    background-color:   rgba(117, 125, 216, 0.75);;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif; 
+    align-items: center;
+    align-content: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+   }
+   @keyframes slidein {
+    from {
+      margin-right: -100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+  .personal {
+    background-color:   rgba(117, 125, 216, 0.75);;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif; 
+    align-items: center;
+    align-content: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+   }
+   @keyframes slidein {
+    from {
+      margin-right: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+  p {
+    padding: 10px;
+    color: aliceblue;
+    }
+  
+  
+
   

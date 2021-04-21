@@ -7,20 +7,20 @@
     font-family: 'Montserrat', sans-serif;
     background: rgba(77, 67, 127, 0.8);
     border-radius: 10px;
+    padding: 10px;
     
 }
-.fab {
+.fab .far {
     color:black;
     padding: 5px;
 }
-.fab:hover {
+.fab .far:hover {
     color: white;
 }
 
 a {
  color:  rgb(245, 240, 248);
  text-decoration: none;
-
 }
 
 a:hover {

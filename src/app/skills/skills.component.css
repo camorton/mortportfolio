@@ -27,14 +27,83 @@
     height: 70%;
    }
 
-  .skill1, .skill2, .skill3, .skill4  {
+  .skill1, .skill3 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     color: white;
+    font-family: 'Montserrat', sans-serif;
     background: rgba(21, 25, 94);
-    padding: 10px, 0;
-    height: 100px;
+    padding: 10px, 10px;
+    height: 120px;
 
+  }
+
+  .skill2, .skill4  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(21, 25, 94);
+    padding: 10px, 10px;
+    height: 120px;
+
+  }
+
+  
+  .example1, .example2, .example3, .example4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .example4 {
+    padding: 20px;
+  }
+
+  h2 {
+    margin-left: 3%;
+
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  h3:hover {
+    color:gray; 
+  }
+
+  @media only screen and (max-width: 924px) {
+    .skill1, .skill3 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      background: rgba(21, 25, 94);
+      padding: 10px, 10px;
+      
+  
+    }
+  
+    .skill2, .skill4  {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      background: rgba(21, 25, 94);
+      padding: 10px, 10px;
+     
+  
+    } 
   }

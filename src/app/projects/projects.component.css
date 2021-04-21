@@ -24,7 +24,7 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    background: rgba(103, 104, 126, 0.45);
+    background: rgba(74, 75, 87, 0.45);
     border-radius: 10px;
     width: 85%;
     height: 100%;
@@ -50,6 +50,7 @@
     color:#4d437f;
     text-decoration: none;
   }
+  
   .flixfinder-container {
     display: flex;
     justify-content: center;
@@ -64,6 +65,7 @@
     color:#19181b;
     text-decoration: none;
     font-weight: 900;
+    font-size: 30px;
   }
   .footer-container {
     position: static;
