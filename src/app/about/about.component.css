@@ -12,7 +12,7 @@
   top: 10px;
 }
 .footer-container {
-  position: absolute;
+  position: fixed;
   bottom: 10px;    
 }
 
