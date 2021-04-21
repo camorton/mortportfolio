@@ -1,25 +1,23 @@
 .main-container {
-    background: url(https://images.unsplash.com/photo-1555945858-78be85a438f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80) no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background: url(https://images.unsplash.com/photo-1555945858-78be85a438f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-container {
+  position: absolute;
+  top: 10px;
+}
+.footer-container {
+  position: absolute;
+  bottom: 10px;    
 }
 
-.header-container {
-    position: absolute;
-    top: 10px;
-  }
-
-  .footer-container {
-    position: absolute;
-    bottom: 10px;    
-  }
-
-  .bio {
-    background-color:   rgba(117, 125, 216, 0.75);;
+.bio {
+    background-color:   rgba(71, 118, 159, 0.75);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -27,10 +25,10 @@
     font-family: 'Montserrat', sans-serif; 
     align-items: center;
     align-content: center;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
    }
-   @keyframes slidein {
+  @keyframes slidein {
     from {
       margin-left: 100%;
       width: 300%;
@@ -42,7 +40,32 @@
     }
    }
   .career {
-    background-color:   rgba(117, 125, 216, 0.75);;
+    background-color:   rgba(71, 118, 159, 0.75);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif; 
+    align-items: center;
+    align-content: flex-start;
+    animation-duration: 3s;
+    animation-name: slidein;
+   }
+  
+   @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+   }
+    
+    .personal {
+    background-color:   rgba(71, 118, 159, 0.75);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -50,49 +73,103 @@
     font-family: 'Montserrat', sans-serif; 
     align-items: center;
     align-content: center;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-name: slidein;
    }
-   @keyframes slidein {
+   @-webkit-keyframes slidein {
     from {
-      margin-right: -100%;
+      margin-left: 100%;
       width: 300%;
     }
   
     to {
-      margin-right: 0%;
+      margin-left: 0%;
       width: 100%;
     }
-  }
-  .personal {
-    background-color:   rgba(117, 125, 216, 0.75);;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    line-height: 1.8;
-    font-family: 'Montserrat', sans-serif; 
-    align-items: center;
-    align-content: center;
-    animation-duration: 3s;
-    animation-name: slidein;
    }
-   @keyframes slidein {
-    from {
-      margin-right: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-right: 0%;
-      width: 100%;
-    }
-  }
-
+    
   p {
     padding: 10px;
     color: aliceblue;
     }
   
-  
+  .hover-info {
+    display: none;
+  } 
+  .hide {
+    display: none;
+  }
+    @media only screen and (max-width: 918px) {
+
+  p {
+    display: none
+  } 
+  .hover-info {
+    display: block;
+    z-index: 1;
+    padding: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: lighter;
+    color: rgb(21, 38, 55);
+    font-size: 40px;
+  }
+  .hide {
+    display: none;
+  }
+
+  .hover-info:hover + .hide {
+    display: block;
+    background-color: rgb(21, 38, 55);
+    color: white;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;    
+  }
+
+  .title-container {
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-width: 656px) {
+  .bio, .career, .personal {
+    display: flex;
+    flex-direction: column;
+  }
+  .hover-info {
+    display: block;
+    z-index: 1;
+    padding: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: lighter;
+    color: rgb(21, 38, 55);
+    font-size: 40px;
+  }
+  .hide {
+    display: none;
+  }
+  .hover-info:hover + .hide {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(21, 38, 55);
+    color: rgba(199, 199, 218, 0.993);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+  }
+  .hover-info:hover {
+    color: rgba(199, 199, 218, 0.993);
+  }
+  .bio {
+    padding: 20px;
+    
+  }
+  .title-container {
+    justify-content: center;
+    margin-top: 40%;
+  }
+ .main-container {
+   overflow: scroll;
+ } 
+}
 
   
