@@ -28,17 +28,7 @@
     animation-duration: 2s;
     animation-name: slidein;
    }
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
   
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-   }
   .career {
     background-color:   rgba(71, 118, 159, 0.75);
     display: flex;
@@ -51,7 +41,7 @@
     animation-duration: 3s;
     animation-name: slidein;
    }
-  
+
    @keyframes slidein {
     from {
       margin-left: 100%;
@@ -62,7 +52,7 @@
       margin-left: 0%;
       width: 100%;
     }
-   }
+   }  
     
     .personal {
     background-color:   rgba(71, 118, 159, 0.75);
@@ -76,17 +66,7 @@
     animation-duration: 4s;
     animation-name: slidein;
    }
-   @-webkit-keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-   }
+   
     
   p {
     padding: 10px;
