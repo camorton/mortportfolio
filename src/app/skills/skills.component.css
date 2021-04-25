@@ -30,7 +30,10 @@
     margin-top: 20%;
     margin-right: 10%;
     margin-left: 10%;
+    margin-bottom: 25px;
     padding: 10px;
+    box-shadow: 0px 0px 30px rgb(4, 8, 99);
+    border: 5px solid rgb(149, 180, 223);
   }
 
   .one, .six, .eight, .thirteen {
@@ -60,8 +63,8 @@
     color: black;
   }
 
-  .one, .thirteen {
-    font-size: 33px;
+  .one, .six, .eight, .thirteen {
+    font-size: 27px;
   }
 
   @media only screen and (min-width:861px){

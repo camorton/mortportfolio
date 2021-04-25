@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: auto;
 }
 .header-container {
   position: absolute;
@@ -157,7 +158,9 @@
     flex-direction: column;
     width: auto;
     }
-
+  .bio {
+    margin-top:150px;
+  }
   }
 
   
