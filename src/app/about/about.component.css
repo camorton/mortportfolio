@@ -114,6 +114,7 @@
   .bio, .career, .personal {
     display: flex;
     flex-direction: column;
+    width: 95%;
   }
   .hover-info {
     display: block;
@@ -139,10 +140,7 @@
   .hover-info:hover {
     color: rgba(199, 199, 218, 0.993);
   }
-  .bio {
-    padding: 20px;
-    
-  }
+ 
   .title-container {
     justify-content: center;
     margin-top: 40%;
@@ -151,5 +149,15 @@
    overflow: scroll;
  } 
 }
+@media only screen and (max-width: 577px) {
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    }
+
+  }
 
   
