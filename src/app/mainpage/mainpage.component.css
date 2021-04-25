@@ -27,7 +27,7 @@
     font-size: 30px;
     padding: 10px;
     font-family: 'Alfa Slab One', cursive;
-    background: linear-gradient(90deg, #15195e, #111e8b,#5e75fa, #4a4ec5, #2953fa);
+    background: linear-gradient(90deg, #15195e, #111e8b,#5e75fa, #4a4ec5, #2953fa, #4a4ec5, #5e75fa, #111e8b, #15195e);
     background-size: 80%;
     animation: animate 30s infinite;
         -webkit-background-clip: text;

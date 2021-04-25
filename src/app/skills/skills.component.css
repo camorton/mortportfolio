@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .header-container {
@@ -17,127 +18,220 @@
     position: fixed;
     bottom: 10px;    
   }
+ 
   .skills-container {
-    width: 100%;
+    display: grid;
+    grid-template-columns: auto(1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(200px, auto);  
+    justify-content: center;
+    overflow: auto; 
+    background: rgba(21, 25, 94);
+    margin-top: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 10px;
+  }
+
+  .one, .six, .eight, .thirteen {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: lighter;
+    font-size: 40px;
+    color:aliceblue;
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .two, .three, .four, .five, .seven, .nine, .ten, .eleven, .twelve, .fourteen, .fifteen {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    align-content: space-around;
-    background-color: rgba(205, 208, 229, 0.9);
-    height: 70%;
-   }
-
-  .skill1, .skill3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    background: rgba(21, 25, 94);
-    padding: 10px, 10px;
-    height: 120px;
-
   }
 
-  .skill2, .skill4  {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    background: rgba(21, 25, 94);
-    padding: 10px, 10px;
-    height: 120px;
-
+  a {
+    color: rgb(164, 166, 211);
+    text-decoration: none;
   }
 
-  .JSexample{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 160px;
-    justify-content: center;
-  } 
-  
-  .example1, .example2, .example3, .example4 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .NGexample1, .NGexample2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 50px;
+  a:hover {
+    color: black;
   }
 
-  .example4 {
-    padding: 20px;
+  .one, .thirteen {
+    font-size: 33px;
   }
 
-  h2 {
-    margin-left: 3%;
-
-  }
-
-  h3 {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    color: white;
-  }
-  h3:hover {
-    color:gray; 
-  }
-
-  @media only screen and (max-width: 924px) {
-    .skill1, .skill3, .skill2, .skill4 {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      background: rgba(21, 25, 94);
-      padding: 10px;
-      height: auto;
-    }
-    h2 {
-      justify-content: center;
-      align-items: flex-start;
-      font-family: 'Alfa Slab One', cursive;
-      font-weight: lighter;
-      font-size: 40px;
-      }
-
-    .JSexample{
-      margin-left: 0px;
-      padding-top: 10px;
-      } 
-    
-    .example1, .example2, .example3, .example4 {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 10px;
-    }
-    .NGexample1, .NGexample2 {
-      padding-left: 0px;
-      padding-bottom: 40px;
-    }
+  @media only screen and (min-width:861px){
     .skills-container {
-      display: block;
-      align-content: top;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 20px;
+      grid-auto-rows: minmax(200px, auto); 
+      margin-top: 10%; 
+      padding: 20px;
       justify-content: center;
-      }
-   .main-container {
-     overflow: scroll;
-         
-   } 
-  
+      overflow: auto; 
+      width: 80%; 
+       }
+    
+    .one {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .two {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .three {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .four {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .five {
+      grid-column: 3;
+      grid-row: 2;
+    }
+    .six {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .seven {
+      grid-column: 2;
+      grid-row: 3;
+    }
+    .eight {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    .nine {
+      grid-column: 2;
+      grid-row: 4;
+    }
+    .ten {
+      grid-column: 3;
+      grid-row: 4;
+    }
+    .eleven {
+      grid-column: 2;
+      grid-row: 5;
+    }
+    .twelve {
+      grid-column: 3;
+      grid-row: 5;
+    }
+    .thirteen {
+      grid-column: 1;
+      grid-row: 6;
+    }
+    .fourteen {
+      grid-column: 2;
+      grid-row: 6;
+    }
+    .fifteen {
+      grid-column: 3;
+      grid-row: 6;
+    }
+    .one, .thirteen {
+      font-size: 40px;
+    }
   } 
   
+@media only screen and (min-width:1500px){
+  .skills-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+    grid-auto-rows: minmax(200px, auto); 
+    margin-top: 10%; 
+    padding: 20px;
+    justify-content: center;
+    overflow: auto; 
+    width: 80%; 
+     }
+  
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .two {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .three {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .four {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .five {
+    grid-column: 5;
+    grid-row: 1;
+  }
+  .six {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .seven {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .eight {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .nine {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .ten {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .eleven {
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .twelve {
+    grid-column: 5;
+    grid-row: 3;
+  }
+  .thirteen {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .fourteen {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .fifteen {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  .one, .thirteen {
+    font-size: 40px;
+  }
+}
+  
+
+
+@media only screen and (min-width:1600px){
+  .skills-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 40px;
+    grid-auto-rows: minmax(200px, auto); 
+    margin-top: 10%; 
+    padding: 20px;
+    justify-content: center;
+    overflow: auto; 
+    width: 90%; 
+     }
+}
